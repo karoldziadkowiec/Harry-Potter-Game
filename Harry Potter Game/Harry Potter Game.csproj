@@ -52,6 +52,12 @@
     <Compile Include="GameWindow.Designer.cs">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="ScoreWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreWindow.Designer.cs">
+      <DependentUpon>ScoreWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartWindow.cs">
       <SubType>Form</SubType>
     </Compile>

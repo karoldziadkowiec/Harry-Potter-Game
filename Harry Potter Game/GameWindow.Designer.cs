@@ -88,7 +88,7 @@
             // 
             // scoreDESCLabel
             // 
-            this.scoreDESCLabel.BackColor = System.Drawing.Color.Firebrick;
+            this.scoreDESCLabel.BackColor = System.Drawing.Color.Maroon;
             this.scoreDESCLabel.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreDESCLabel.ForeColor = System.Drawing.Color.White;
             this.scoreDESCLabel.Location = new System.Drawing.Point(416, 587);
@@ -100,7 +100,7 @@
             // 
             // scoreLabel
             // 
-            this.scoreLabel.BackColor = System.Drawing.Color.Firebrick;
+            this.scoreLabel.BackColor = System.Drawing.Color.Maroon;
             this.scoreLabel.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreLabel.ForeColor = System.Drawing.Color.White;
             this.scoreLabel.Location = new System.Drawing.Point(580, 587);
@@ -112,7 +112,7 @@
             // 
             // bestLabel
             // 
-            this.bestLabel.BackColor = System.Drawing.Color.Firebrick;
+            this.bestLabel.BackColor = System.Drawing.Color.Maroon;
             this.bestLabel.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bestLabel.ForeColor = System.Drawing.Color.Gold;
             this.bestLabel.Location = new System.Drawing.Point(964, 587);
@@ -124,7 +124,7 @@
             // 
             // bestDESCLabel
             // 
-            this.bestDESCLabel.BackColor = System.Drawing.Color.Firebrick;
+            this.bestDESCLabel.BackColor = System.Drawing.Color.Maroon;
             this.bestDESCLabel.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bestDESCLabel.ForeColor = System.Drawing.Color.Gold;
             this.bestDESCLabel.Location = new System.Drawing.Point(828, 587);

@@ -28,6 +28,5 @@ namespace Harry_Potter_Game
         {
             Application.Exit();
         }
-
     }
 }

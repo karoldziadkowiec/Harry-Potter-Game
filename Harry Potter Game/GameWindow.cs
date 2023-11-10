@@ -62,7 +62,7 @@ namespace Harry_Potter_Game
 
         private void saveScore()
         {
-            if (cloud.Left < -50)
+            if (cloud.Left < -100)
             {
                 cloud.Left = 830;
                 score++;
