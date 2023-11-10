@@ -12,6 +12,7 @@ namespace Harry_Potter_Game
 {
     public partial class StartWindow : Form
     {
+        Player _player = new Player();
         public StartWindow()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace Harry_Potter_Game
 
         private void goToGameWindow(object sender, EventArgs e)
         {
-            GameWindow gameWindow = new GameWindow();
+            GameWindow gameWindow = new GameWindow(_player);
             gameWindow.Show();
             this.Hide();
         }

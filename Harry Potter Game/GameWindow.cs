@@ -12,15 +12,23 @@ namespace Harry_Potter_Game
 {
     public partial class GameWindow : Form
     {
+        Player _player = null;
         int buildingSpeed = 8;
         int cloudSpeed = 8;
         int gravity = 10 ;
-        int score = 0;
-        int bestScore = 0;
 
-        public GameWindow()
+        public GameWindow(Player player)
         {
+            _player = player;
             InitializeComponent();
+
+            displayPlayerScores();
+        }
+
+        private void displayPlayerScores()
+        {
+            scoreLabel.Text = _player.myScore.ToString();
+            bestLabel.Text = _player.bestScore.ToString();
         }
 
         private void gameTimerEvent(object sender, EventArgs e)
@@ -28,7 +36,7 @@ namespace Harry_Potter_Game
             harryPotter.Top += gravity;
             cloud.Left -= cloudSpeed;
             building.Left -= buildingSpeed;
-            scoreLabel.Text = score.ToString();
+            scoreLabel.Text = _player.myScore.ToString();
 
             isTimeToEndGame();
             saveScore();
@@ -57,6 +65,9 @@ namespace Harry_Potter_Game
             if (harryPotter.Bounds.IntersectsWith(cloud.Bounds) || harryPotter.Bounds.IntersectsWith(building.Bounds) || harryPotter.Bounds.IntersectsWith(grass.Bounds) || harryPotter.Top < -10)
             {
                 gameTimer.Stop();
+                ScoreWindow scoreWindow = new ScoreWindow(_player);
+                scoreWindow.Show();
+                this.Hide();
             }
         }
 
@@ -65,12 +76,12 @@ namespace Harry_Potter_Game
             if (cloud.Left < -100)
             {
                 cloud.Left = 830;
-                score++;
+                _player.myScore++;
             }
             else if (building.Left < -100)
             {
                 building.Left = 900;
-                score++;
+                _player.myScore++;
                 increaseObstaclesSpeed();
             }
         }
@@ -83,10 +94,10 @@ namespace Harry_Potter_Game
 
         private void checkTheBestScore()
         {
-            if (score > bestScore) 
+            if (_player.myScore > _player.bestScore) 
             {
-                bestScore = score;
-                bestLabel.Text = bestScore.ToString();
+                _player.bestScore = _player.myScore;
+                bestLabel.Text = _player.bestScore.ToString();
             }
         }
     }

@@ -155,6 +155,7 @@
             this.Controls.Add(this.building);
             this.Controls.Add(this.grass);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "GameWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Harry Potter Game";

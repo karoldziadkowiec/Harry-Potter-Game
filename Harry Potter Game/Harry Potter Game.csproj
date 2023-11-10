@@ -52,6 +52,7 @@
     <Compile Include="GameWindow.Designer.cs">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Player.cs" />
     <Compile Include="ScoreWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +79,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ScoreWindow.resx">
+      <DependentUpon>ScoreWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StartWindow.resx">
       <DependentUpon>StartWindow.cs</DependentUpon>
     </EmbeddedResource>
