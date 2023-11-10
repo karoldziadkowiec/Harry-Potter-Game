@@ -62,12 +62,14 @@ namespace Harry_Potter_Game
 
         private void isTimeToEndGame()
         {
-            if (harryPotter.Bounds.IntersectsWith(cloud.Bounds) || harryPotter.Bounds.IntersectsWith(building.Bounds) || harryPotter.Bounds.IntersectsWith(grass.Bounds) || harryPotter.Top < -10)
+            if (harryPotter.Bounds.IntersectsWith(cloud.Bounds) || 
+                harryPotter.Bounds.IntersectsWith(building.Bounds) || 
+                harryPotter.Bounds.IntersectsWith(grass.Bounds) || 
+                harryPotter.Top < -10)
             {
                 gameTimer.Stop();
                 ScoreWindow scoreWindow = new ScoreWindow(_player);
                 scoreWindow.Show();
-                //this.Hide();
             }
         }
 
