@@ -67,7 +67,7 @@ namespace Harry_Potter_Game
                 gameTimer.Stop();
                 ScoreWindow scoreWindow = new ScoreWindow(_player);
                 scoreWindow.Show();
-                this.Hide();
+                //this.Hide();
             }
         }
 

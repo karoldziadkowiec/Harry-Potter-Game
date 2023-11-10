@@ -8,8 +8,8 @@ namespace Harry_Potter_Game
 {
     public class Player
     {
-        private int myScore { get; set; }
-        private int bestScore { get; set; }
+        public int myScore { get; set; }
+        public int bestScore { get; set; }
 
         public Player()
         {

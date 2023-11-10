@@ -40,7 +40,7 @@ namespace Harry_Potter_Game
 
             GameWindow gameWindow = new GameWindow(_player);
             gameWindow.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void goToStartWindow(object sender, EventArgs e)

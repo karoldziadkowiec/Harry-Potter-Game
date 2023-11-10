@@ -51,16 +51,16 @@
             this.grass.Location = new System.Drawing.Point(-2, 560);
             this.grass.Name = "grass";
             this.grass.Size = new System.Drawing.Size(1086, 95);
-            this.grass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.grass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.grass.TabIndex = 0;
             this.grass.TabStop = false;
             // 
             // building
             // 
             this.building.Image = ((System.Drawing.Image)(resources.GetObject("building.Image")));
-            this.building.Location = new System.Drawing.Point(651, 308);
+            this.building.Location = new System.Drawing.Point(650, 308);
             this.building.Name = "building";
-            this.building.Size = new System.Drawing.Size(85, 253);
+            this.building.Size = new System.Drawing.Size(111, 253);
             this.building.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.building.TabIndex = 1;
             this.building.TabStop = false;
@@ -68,7 +68,7 @@
             // cloud
             // 
             this.cloud.Image = ((System.Drawing.Image)(resources.GetObject("cloud.Image")));
-            this.cloud.Location = new System.Drawing.Point(611, 0);
+            this.cloud.Location = new System.Drawing.Point(622, 0);
             this.cloud.Name = "cloud";
             this.cloud.Size = new System.Drawing.Size(162, 111);
             this.cloud.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,7 +79,7 @@
             // 
             this.harryPotter.BackColor = System.Drawing.Color.Transparent;
             this.harryPotter.Image = ((System.Drawing.Image)(resources.GetObject("harryPotter.Image")));
-            this.harryPotter.Location = new System.Drawing.Point(175, 183);
+            this.harryPotter.Location = new System.Drawing.Point(128, 68);
             this.harryPotter.Name = "harryPotter";
             this.harryPotter.Size = new System.Drawing.Size(145, 109);
             this.harryPotter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -144,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(1082, 653);
             this.Controls.Add(this.bestLabel);
             this.Controls.Add(this.bestDESCLabel);

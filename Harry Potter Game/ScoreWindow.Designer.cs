@@ -119,6 +119,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(432, 403);
+            this.ControlBox = false;
             this.Controls.Add(this.bestLabel);
             this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.exitButton);
@@ -129,7 +130,7 @@
             this.MaximizeBox = false;
             this.Name = "ScoreWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "HarryPotterGame";
+            this.Text = "Harry Potter Game";
             this.ResumeLayout(false);
 
         }
