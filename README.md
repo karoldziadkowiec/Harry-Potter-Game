@@ -1,5 +1,5 @@
 # Harry Potter Game
-Harry Potter Game is a game in which the player takes on the role of Harry Potter flying on a broomstick. The main goal of the game is to avoid obstacles sticking out from the bottom and top of the screen by pressing the Spacebar. The project is a window application.
+Harry Potter Game is a game in which the player takes on the role of Harry Potter flying on a broomstick. The main goal of the game is to avoid obstacles sticking out from the bottom and top of the screen by pressing the "Space" key. The project is a window application.
 
 Technologies used in the project: C#, .NET Framework (Windows Forms).
 
